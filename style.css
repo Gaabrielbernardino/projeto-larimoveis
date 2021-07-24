@@ -1,0 +1,155 @@
+body,
+h1,
+h2,
+ul,
+li,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;  
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #00d5ed 31%, #eee 30%);
+  font-family: "Nunito";
+}
+
+/* HEADER */
+
+.repos-img {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.img-logo {
+  width: 10%;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.repos-img img {
+  width: 25px;
+}
+
+/* LISTA PRODUTOS */
+
+.repositorios {
+  max-width: 900px;
+  margin: 50px auto 0 auto;
+}
+
+.repositorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.repositorio-name {
+  font-size: 2em;
+  padding: 5px;
+  line-height: 1;
+}
+
+.subtitle {
+  padding: 10px;
+}
+
+.forks {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.img-fork {
+  width: 25px;
+  height: 25px;
+}
+
+.itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+}
+
+.watchers {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.watchers img {
+  margin: 5px;
+}
+
+.linkgit img {
+  width: 35px;
+  height: 35px;
+}
+
+#data {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+#data img {
+  margin-right: 5px;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 900px) {
+  #app {
+    padding: 0 10px;
+  }
+  .repositorios {
+    margin-top: 40px;
+  }
+  .repositorio {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin: 30px auto;
+  }
+  .repositorio-name {
+    font-size: 1.5rem;
+
+  }
+}
+
+
